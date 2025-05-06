@@ -1,0 +1,153 @@
+#Otsikko {
+    color: olive;
+    font-size: 100px;
+    font-family: fantasy;
+    margin-left: 740px;
+    margin-top: 10px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flexbox;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #432711;
+    padding: 10px 20px;
+  }
+  
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding-left: 650px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #4CAF50;
+  }
+
+
+  #Missio{
+    color: olive;
+    padding-left: 700px;
+    font-size: 50px;
+    font-family: fantasy;  
+    text-shadow: 
+    1px 1px 0px black,   
+    -1px -1px 0px black, 
+    1px -1px 0px black, 
+    -1px 1px 0px black;       
+  }
+
+  #Teksti {
+    font-size: 25px;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-family: fantasy;
+    border: 1px solid #333;
+    margin-left: 50px;
+    margin-right:50px;
+    margin-bottom: 30px;
+    background-color: olive;
+    padding: 20px;
+  }
+
+  #Viiva{
+    height: 10px;
+    background-color: #432711;
+    border: none;
+  }
+
+  #RavintoaineProteiini{
+    border: 1px solid #333;
+    margin-left: 300px;
+    margin-right:1570px;
+    margin-bottom: 100px;
+    margin-top: 10px;
+    background-color: olive;
+    padding: 20px;
+    height: 600px;
+    width: 400px;
+    position: absolute;
+  }
+
+  #RavintoaineOtsikko{
+    margin-left: 300px;
+    font-family: fantasy;
+    font-size: 50px;
+    color: olive;
+    padding-left: 450px;
+    text-shadow: 
+    1px 1px 0px black,   
+    -1px -1px 0px black, 
+    1px -1px 0px black, 
+    -1px 1px 0px black;   
+  }
+
+  #ProteiiniKuva{
+    display: inline-block;
+    border: 1px solid #333;
+  }
+
+  #RavintoarvoTeksti{
+    font-family: fantasy;
+  }
+#RavintoaineHiilihydraatti{
+    border: 1px solid #333;
+    margin-left: 725px;
+    margin-right:1570px;
+    margin-bottom: 100px;
+    margin-top: 10px;
+    background-color: olive;
+    padding: 20px;
+    height: 600px;
+    width: 400px;
+    position: absolute;
+}
+
+#HiilihydraattiKuva{
+    display: inline-block;
+    border: 1px solid #333;
+}
+
+#RavintoaineRasva{
+    border: 1px solid #333;
+    margin-left: 1150px;
+    margin-right:1570px;
+    margin-top: 10px;
+    background-color: olive;
+    padding: 20px;
+    height: 600px;
+    width: 400px; 
+    position: absolute;
+}
+
+#RasvaKuva{
+    display: inline-block;
+    border: 1px solid #333;
+}
+#Viiva2{
+    height: 10px;
+    background-color: #432711;
+    border: none;
+    margin-top: 650px;
+
+}
