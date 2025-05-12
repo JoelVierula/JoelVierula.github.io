@@ -7,10 +7,10 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
   
   body {
     font-family: Arial, sans-serif;
@@ -25,14 +25,14 @@
   }
   
 
-  .nav-links {
+  .navlinkit {
     list-style: none;
     display: flex;
-    gap: 40px;
-    padding-left: 70vh;
+    gap: 15%;
+    padding-left: 40%;
   }
   
-  .nav-links li a {
+  .navlinkit li a {
     color: white;
     text-decoration: none;
     font-size: 16px;

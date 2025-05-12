@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="list.css">
+</head>
+<body style="background-color: lightgreen;">
+    <h1 id="Otsikko"><a href="index.html">RavintoFi</a></h1>
+    <nav class="navbar">
+        <ul class="navlinkit">
+          <li><a href="list.html">Ravintoarvot</a></li>
+          <li><a href="laskin.html">Kalori laskin</a></li>
+        </ul>
+      </nav>
+
+        <div id="infoBox" class="info-box">
+    <h3 id="infoOtsikko"></h3>
+    <img id="infoKuva" src="" alt="">
+    <p id="infoTeksti"></p>
+  </div>
+      
+<ul>
+    <li class="hedelmat" onclick="vaihdaAlaluottelo(this)">Hedelmät</li>
+    <ul class="alaluottelo">
+      <li class="item" onclick="naytaInfo('Appelsiini', 'Appelsiini.jpg', 'Ravintoarvot per 100 g: / Kalorit: 47 kcal / Proteiini: 0.94 g / Hiilihydraatit: 11.75 g / Rasva: 0.12 g / Kuitu: 2.4 g / Sokeri: 9.35 g / Suola: 0 mg.', this)">Appelsiini</li>
+      <li class="item" onclick="naytaInfo('Banaani', 'banaani.jpg', 'Ravintoarvot per 100g: / Kalorit: 89 kcal / Proteiini: 1.1 g / Hiilihydraatit: 22.8 g / Rasva: 0.3 g / Kuitu: 2.6 g / Sokeri: 12.2 g / Suola: 1 mg.', this)">Banaani</li>
+      <li class="item" onclick="naytaInfo('Omena', 'omena.jpg', 'Ravintoarvot per 100g: / Kalorit: 52 kcal / Proteiini: 0.26 g / Hiilihydraatit: 13.81 g / Rasva: 0.17 g / Kuitu: 2.4 g / Sokeri: 10.39 g / Suola: 1 mg.', this)">Omena</li>
+      <li class="item" onclick="naytaInfo('Päärynä', 'päärynä.jpg', 'Ravintoarvot per 100g: / Kalorit: 58 kcal / Proteiini: 0.38 g / Hiilihydraatit: 15.46 g / Rasva: 0.12 g / Kuitu: 3.1 g / Sokeri: 9.8 g / Suola: 1 mg.', this)">Päärynä</li>
+      <li class="item" onclick="naytaInfo('Vesimelooni', 'vesimelooni.jpg', 'Ravintoarvot per 100g: / Kalorit: 30 kcal / Proteiini: 0.6 g / Hiilihydraatit: 7.6 g / Rasva: 0.2 g / Kuitu: 0.4 g / Sokeri: 6.2 g / Suola: 1 mg.', this)">Vesimelooni</li>
+    </ul>
+  
+    <li class="vihannekset" onclick="vaihdaAlaluottelo(this)">Vihannekset</li>
+    <ul class="alaluottelo">
+      <li class="item" onclick="naytaInfo('Paprika', 'paprika.jpg', 'Ravintoarvot per 100g: / Kalorit: 31 kcal / Proteiini: 1 g / Hiilihydraatit: 6 g / Rasva: 0.3 g / Kuitu: 2.1 g / Sokeri: 4.2 g / Suola: 0 mg.', this)">Paprika</li>
+      <li class="item" onclick="naytaInfo('Parsakaali', 'parsakaali.jpg', 'Ravintoarvot per 100g: / Kalorit: 35 kcal / Proteiini: 3.9 g / Hiilihydraatit: 1.6 g / Rasva: 0.5 g / Kuitu: 2.6 g / Sokeri: 1.7 g / Suola: 0 mg.', this)">Parsakaali</li>
+      <li class="item" onclick="naytaInfo('Pinaatti', 'pinaatti.jpg', 'Ravintoarvot per 100g: / Kalorit: 18 kcal / Proteiini: 2.1 g / Hiilihydraatit: 0.2 g / Rasva: 0.6 g / Kuitu: 1.9 g / Sokeri: 0.1 g / Suola: 1 mg.', this)">Pinaatti</li>
+      <li class="item" onclick="naytaInfo('Porkkana', 'porkkana.jpg', 'Ravintoarvot per 100g: / Kalorit: 33 kcal / Proteiini: 0.6 g / Hiilihydraatit: 5.6 g / Rasva: 0.2 g / Kuitu: 2.6 g / Sokeri: 5.4 g / Suola: 1 mg.', this)">Porkkana</li>
+      <li class="item" onclick="naytaInfo('Tomaatti', 'tomaatti.jpg', 'Ravintoarvot per 100g: / Kalorit: 23 kcal / Proteiini: 1 g / Hiilihydraatit: 3.9 g / Rasva: 0.2 g / Kuitu: 1.4 g / Sokeri: 3.4 g / Suola: 0 mg.', this)">Tomaatti</li>
+    </ul>
+
+    <li class="liha" onclick="vaihdaAlaluottelo(this)">Liha</li>
+    <ul class="alaluottelo">
+      <li class="item" onclick="naytaInfo('Sika', 'sika.jpg', 'Ravintoarvot per 100g: / Kalorit: 195 kcal / Proteiini: 18.9 g / Hiilihydraatit: 0 g / Rasva: 13.4 g / Kuitu: 0 g / Sokeri: 0 g / Suola: 0.2 g.', this)">Sika</li>
+      <li class="item" onclick="naytaInfo('Nauta', 'nauta.jpg', 'Ravintoarvot per 100g: / Kalorit: 113 kcal / Proteiini: 21.6 g / Hiilihydraatit: 0 g / Rasva: 2.9 g / Kuitu: 0 g / Sokeri: 0 g / Suola: 0.14 g.', this)">Nauta</li>
+      <li class="item" onclick="naytaInfo('Kana', 'kana.jpg', 'Ravintoarvot per 100g: / Kalorit: 167 kcal / Proteiini: 26.5 g / Hiilihydraatit: 0 g / Rasva: 6.7 g / Kuitu: 0 g / Sokeri: 0 g / Suola: 0.1 g.', this)">Kana</li>
+      <li class="item" onclick="naytaInfo('Lammas', 'lammas.jpg', 'Ravintoarvot per 100g: / Kalorit: 294 kcal / Proteiini: 25 g / Hiilihydraatit: 0 g / Rasva: 21 g / Kuitu: 0 g / Sokeri: 0 g / Suola: 0.1 g.', this)">Lammas</li>
+      <li class="item" onclick="naytaInfo('Ankka', 'ankka.jpg', 'Ravintoarvot per 100g: / Kalorit: 337 kcal / Proteiini: 19 g / Hiilihydraatit: 0 g / Rasva: 29 g / Kuitu: 0 g / Sokeri: 0 g / Suola: 0.1 mg.', this)">Ankka</li>
+    </ul>
+
+    <li class="maitotuotteet" onclick="vaihdaAlaluottelo(this)">Maitotuotteet</li>
+    <ul class="alaluottelo">
+      <li class="item" onclick="naytaInfo('Juusto', 'juusto.jpg', 'Ravintoarvot per 100g: / Kalorit: 404 kcal / Proteiini: 25 g / Hiilihydraatit: 0.1 g / Rasva: 33 g / Kuitu: 0 g / Sokeri: 0.1 g / Suola: 0.5 g.', this)">Juusto</li>
+      <li class="item" onclick="naytaInfo('Kevytmaito', 'maito.jpg', 'Ravintoarvot per 100g: / Kalorit: 46 kcal / Proteiini: 3.2 g / Hiilihydraatit: 4.8 g / Rasva: 1.5 g / Kuitu: 0 g / Sokeri: 4.8 g / Suola: 0.1 g.', this)">Kevytmaito</li>
+      <li class="item" onclick="naytaInfo('Täysmaito', 'maito.jpg', 'Ravintoarvot per 100g: / Kalorit: 64 kcal / Proteiini: 3.2 g / Hiilihydraatit: 4.8 g / Rasva: 3.5 g / Kuitu: 0 g / Sokeri: 4.8 g / Suola: 0.1 g.', this)">Täysmaito</li>
+      <li class="item" onclick="naytaInfo('Viili', 'viili.jpg', 'Ravintoarvot per 100g: / Kalorit: 62 kcal / Proteiini: 3 g / Hiilihydraatit: 4 g / Rasva: 3.5 g / Kuitu: 0 g / Sokeri: 4 g / Suola: 0.1 g.', this)">Viili</li>
+      <li class="item" onclick="naytaInfo('Kerma', 'kerma.jpg', 'Ravintoarvot per 100g: / Kalorit: 356 kcal / Proteiini: 2.2 g / Hiilihydraatit: 3.3 g / Rasva: 38 g / Kuitu: 0 g / Sokeri: 3 g / Suola: 0.1 g.', this)">Kerma</li>
+    </ul>
+
+    <li class="marjat" onclick="vaihdaAlaluottelo(this)">Marjat</li>
+    <ul class="alaluottelo">
+      <li class="item" onclick="naytaInfo('Mustikka', 'mustikka.jpg', 'Ravintoarvot per 100g: / Kalorit: 65 kcal / Proteiini: 0.8 g / Hiilihydraatit: 10.2 g / Rasva: 1.1 g / Kuitu: 3.3 g / Sokeri: 8.4 g / Suola: 0 g.', this)">Mustikka</li>
+      <li class="item" onclick="naytaInfo('Puolukka', 'puolukka.jpg', 'Ravintoarvot per 100g: / Kalorit: 56 kcal / Proteiini: 0.5 g / Hiilihydraatit: 8.9 g / Rasva: 0.7 g / Kuitu: 2.6 g / Sokeri: 8.2 g / Suola: 0 g.', this)">Puolukka</li>
+      <li class="item" onclick="naytaInfo('Vadelma', 'vadelma.jpg', 'Ravintoarvot per 100g: / Kalorit: 48 kcal / Proteiini: 1 g / Hiilihydraatit: 5.7 g / Rasva: 0.8 g / Kuitu: 3.7 g / Sokeri: 5.3 g / Suola: 0 g.', this)">Vadelma</li>
+      <li class="item" onclick="naytaInfo('Mansikka', 'mansikka.jpg', 'Ravintoarvot per 100g: / Kalorit: 45 kcal / Proteiini: 0.5 g / Hiilihydraatit: 7.7 g / Rasva: 0.3 g / Kuitu: 1.9 g / Sokeri: 7 g / Suola: 0 g.', this)">Mansikka</li>
+      <li class="item" onclick="naytaInfo('Lakka', 'lakka.jpg', 'Ravintoarvot per 100g: / Kalorit: 55 kcal / Proteiini: 1.5 g / Hiilihydraatit: 6.8 g / Rasva: 1.1 g / Kuitu: 6.3 g / Sokeri: 5.8 g / Suola: 0 g.', this)">Lakka</li>
+    </ul>
+  </ul>
+
+  
+  <script>
+  let lastClickedItem = null;  
+
+function vaihdaAlaluottelo(element) {
+  const sublist = element.nextElementSibling;
+  if (sublist && sublist.classList.contains('alaluottelo')) {
+    sublist.style.display = sublist.style.display === 'block' ? 'none' : 'block';
+  }
+}
+
+function naytaInfo(title, imageSrc, text, element) {
+  const infoBox = document.getElementById('infoBox');
+
+ 
+  if (lastClickedItem === element) {
+    infoBox.style.display = 'none';
+    lastClickedItem = null;  
+  } else {
+    
+    document.getElementById('infoOtsikko').innerText = title;
+    document.getElementById('infoKuva').src = imageSrc;
+    document.getElementById('infoKuva').alt = title;
+    document.getElementById('infoTeksti').innerText = text;
+    
+    
+    infoBox.style.display = 'block';
+    lastClickedItem = element; 
+  }
+}
+  </script>
+  
+      
+</body>
+</html>

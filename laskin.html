@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="laskin.css">
+</head>
+<body style="background-color: lightgreen;">
+    <h1 id="Otsikko"><a href="index.html">RavintoFi</a></h1>
+    <nav class="navbar">
+        <ul class="navlinkit">
+          <li><a href="list.html">Ravintoarvot</a></li>
+          <li><a href="laskin.html">Kalori laskin</a></li>
+        </ul>
+      </nav>
+
+       <h1>Kalori Laskin</h1>
+    <label>Kalorit per 100 g:</label><br>
+    <input type="number" id="caloriesPer100g" placeholder="kalorimäärä"><br>
+
+    <label>Määrä grammoissa:</label><br>
+    <input type="number" id="grammat" placeholder="grammat"><br>
+
+    <button onclick="calculateCalories()">Laske</button>
+
+    <div class="result" id="result"></div>
+
+    <div class="info-box">
+    <h2>Kalorilaskimen käyttö ja hyödyt</h2>
+    <p><strong>Miten käytät:</strong></p>
+    <ol>
+        <li>Syötä ruoan kalorimäärä per 100 grammaa.</li>
+        <li>Syötä syömäsi ruoan määrä grammoina.</li>
+        <li>Paina "Laske" ja näet kokonaiskalorimäärän.</li>
+    </ol>
+    <p><strong>Hyödyt:</strong></p>
+    <ul>
+        <li>Auttaa seuraamaan energiankulutusta helposti.</li>
+        <li>Tukee painonhallintaa ja terveellisiä ruokavalintoja.</li>
+        <li>Sopii arjen nopeaan käyttöön tai tarkempaan ruokapäiväkirjaan.</li>
+    </ul>
+</div>
+
+
+    <script>
+        function calculateCalories() {
+            let calPer100g = parseFloat(document.getElementById('caloriesPer100g').value);
+            let grammat = parseFloat(document.getElementById('grammat').value);
+
+            if (isNaN(calPer100g) || isNaN(grammat)) {
+                document.getElementById('result').innerText = "Voit syöttää vain numeroita.";
+                return;
+            }
+
+            let totalCalories = (calPer100g / 100) * grammat;
+            document.getElementById('result').innerText = "Kalorimäärä: " + totalCalories.toFixed(2) + " kcal";
+        }
+    </script>
+</body>
+</html>
